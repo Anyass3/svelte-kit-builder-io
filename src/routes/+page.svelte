@@ -1,4 +1,5 @@
 <script>
+	import Footer from '$lib/footer.svelte';
 	// import { isPreviewing, RenderContent } from '@builder.io/sdk-svelte';
 	// import { BUILDER_PUBLIC_API_KEY } from '$lib/apiKey';
 	// import { browser } from '$app/environment';
@@ -33,28 +34,4 @@
 	{/if}
 </main>
 
-<footer>
-	<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
-</footer>
-
-<style>
-	h1 {
-		width: 100%;
-		font-size: 2rem;
-		text-align: center;
-	}
-
-	footer {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		padding: 40px;
-	}
-
-	@media (min-width: 480px) {
-		footer {
-			padding: 40px 0;
-		}
-	}
-</style>
+<Footer />
